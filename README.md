@@ -1,4 +1,3 @@
-
 # Assignment 2
 
 This repository contains the source code and images for Assignment 2.

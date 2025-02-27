@@ -1,1 +1,14 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/sceOx6oX)
+
+# Assignment 2
+
+This repository contains the source code and images for Assignment 2.
+
+## Structure
+#### `utils.py`
+Contains the necessary functions to run in jupyter notebook and main.py script 
+#### `main.py`
+Contains the source code for taking points from the image
+#### `assignments.ipynb`
+Contains the examples for assignments 1 to 3
+#### `images`
+The folder that has the images

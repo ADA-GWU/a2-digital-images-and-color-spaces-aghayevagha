@@ -6,7 +6,7 @@ This repository contains the source code and images for Assignment 2.
 #### `utils.py`
 Contains the necessary functions to run in jupyter notebook and main.py script 
 #### `main.py`
-Contains the source code for taking points from the image
+Contains the source code for taking points from the image and calculating their closeness.
 #### `assignments.ipynb`
 Contains the examples for assignments 1 to 3
 #### `images`

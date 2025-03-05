@@ -3,11 +3,30 @@
 This repository contains the source code and images for Assignment 2.
 
 ## Structure
-#### `utils.py`
-Contains the necessary functions to run in jupyter notebook and main.py script 
-#### `main.py`
-Contains the source code for taking points from the image and calculating their closeness.
-#### `assignments.ipynb`
-Contains the examples for assignments 1 to 3
-#### `images`
-The folder that has the images
+  - `images`The folder that has the images, make sure to keep it in the same folder with other scripts and the notebook.
+
+  - `utils.py` Contains the necessary functions for all of the tasks
+  - the other scripts are for assignments.
+
+## Assignments 
+
+### Part 1
+Run `a1.ipynb`, which applies the gray-scaling algorithms to images and you will also see qualitativ and quantitativ analysis (mse) there.
+
+### Part 2
+Run `a2.py`, it provides an interactive tool for applying 3 different quantization techniques.
+It is recommended to resize images for faster calculation, as **median cut ** and ** K-means** quantization requires more calculation rather than uniform quantization.
+
+### Part 3
+Run `a3.py`, it provides an interactive tool for changing the hue, saturation, brightnes and lightness of the image in real time.
+
+### Part 4
+Run `a3.py`, it provides an interactive tool for picking a point and colours all the pixels which have a smaller delta E distance than threshold with  the **label colour** 
+
+## How to run
+
+~~~
+git clone 
+pip install opencv-python numpy matplotlib scikit-image scikit-learn
+~~~
+

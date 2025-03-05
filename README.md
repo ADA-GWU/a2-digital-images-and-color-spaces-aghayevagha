@@ -28,10 +28,16 @@ Run `a3.py`, it provides an interactive tool for picking a point and colours all
 ~~~
 git clone https://github.com/ADA-GWU/a2-digital-images-and-color-spaces-aghayevagha.git
 cd a2-digital-images-and-color-spaces-aghayevagha
-python a2.py 
 ~~~
 
 Install the necessary libraries
 ~~~
 pip install opencv-python numpy matplotlib scikit-image scikit-learn
 ~~~
+
+  - For the assignment one, run the jupyter notebook `a1.ipynb`.
+  - run `a2.py`, `a3.py`, `a4.py` for corresponding files, example:
+~~~
+python a2.py
+~~~
+

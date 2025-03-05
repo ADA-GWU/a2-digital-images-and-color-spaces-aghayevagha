@@ -26,7 +26,12 @@ Run `a3.py`, it provides an interactive tool for picking a point and colours all
 ## How to run
 
 ~~~
-git clone 
-pip install opencv-python numpy matplotlib scikit-image scikit-learn
+git clone https://github.com/ADA-GWU/a2-digital-images-and-color-spaces-aghayevagha.git
+cd a2-digital-images-and-color-spaces-aghayevagha
+python a2.py 
 ~~~
 
+Install the necessary libraries
+~~~
+pip install opencv-python numpy matplotlib scikit-image scikit-learn
+~~~

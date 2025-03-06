@@ -36,7 +36,7 @@ pip install opencv-python numpy matplotlib scikit-image scikit-learn
 ~~~
 
   - For the assignment one, run the jupyter notebook `a1.ipynb`.
-  - run `a2.py`, `a3.py`, `a4.py` for corresponding assignments, example:
+  - run `a2.py`, `a3.py`, `a4.py` for corresponding parts of the assignments, example:
 ~~~
 python a2.py
 ~~~

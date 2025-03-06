@@ -27,16 +27,16 @@ ax.axis("off")
 
 # Define sliders
 ax_hue = fig.add_axes([0.25, 0.25, 0.65, 0.03])
-hue_slider = Slider(ax=ax_hue, label="Hue", valmin=-50, valmax=50, valinit=0)
+hue_slider = Slider(ax=ax_hue, label="Hue", valmin=-179, valmax=179, valinit=0)
 
 ax_saturation = fig.add_axes([0.25, 0.2, 0.65, 0.03])
-sat_slider = Slider(ax=ax_saturation, label="Saturation", valmin=0.1, valmax=3, valinit=1)
+sat_slider = Slider(ax=ax_saturation, label="Saturation", valmin=0.1, valmax=5, valinit=1)
 
 ax_brightness = fig.add_axes([0.25, 0.15, 0.65, 0.03])
-bright_slider = Slider(ax=ax_brightness, label="Brightness", valmin=0.1, valmax=3, valinit=1)
+bright_slider = Slider(ax=ax_brightness, label="Brightness", valmin=0.1, valmax=5, valinit=1)
 
 ax_lightness = fig.add_axes([0.25, 0.1, 0.65, 0.03])
-light_slider = Slider(ax=ax_lightness, label="Lightness", valmin=0.1, valmax=3, valinit=1)
+light_slider = Slider(ax=ax_lightness, label="Lightness", valmin=0.1, valmax=5, valinit=1)
 
 # Update function
 def update(val):

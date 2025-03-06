@@ -41,3 +41,5 @@ pip install opencv-python numpy matplotlib scikit-image scikit-learn
 python a2.py
 ~~~
 
+## Credits
+The image number five is taken from the internet ([source](https://www.istockphoto.com/stock-photos/nature-and-landscapes))

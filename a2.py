@@ -4,25 +4,26 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.widgets import Slider, Button, RadioButtons
 from sklearn.cluster import KMeans
-from utils import resize_image, uniform_quantization, kmeans_quantization, median_quantization
+from utils import resize_image, uniform_quantization, kmeans_quantization, median_quantization, save_image
 
 
 # make sure the images folder and main script is in the same directory 
 # the first image contains different colours, good for test
 image_path = 'images/image5.jpeg'
 
+#if you want images to save 
+save = True
+image_output_name = 'newimage.jpeg'
+
 # if you want reduce computation, resize the image and set it to True, give a maximum image 
 resize = True
 max_size = 300
-
-
-
 
 script_dir = os.path.dirname(os.path.realpath(__file__))
 file_name = os.path.join(script_dir, image_path)
 image = cv2.imread(file_name)
 if resize:
-    image = resize_image(image,max_size) # resize image to achiave faster computation
+    image = resize_image(image, max_size)  # resize image to achieve faster computation
 image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 
 original_image = image.copy()
@@ -108,5 +109,12 @@ reset_button.on_clicked(reset)
 
 # Apply initial quantization based on default method
 apply_quantization()
+
+# Save image when window is closed
+def on_close(event):
+    if save:
+        save_image(img_display.get_array(), script_dir, image_output_name, 2)  
+
+fig.canvas.mpl_connect('close_event', on_close)
 
 plt.show()

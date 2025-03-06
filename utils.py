@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
 from skimage import color
-
+import os
 
 def read_image(path):
 
@@ -30,6 +30,32 @@ def resize_image(image, max_size=800):
         image = cv2.resize(image, (new_width, new_height), interpolation=cv2.INTER_AREA)
     
     return image
+
+import cv2
+import os
+
+# Function to save the image
+import cv2
+import os
+
+# Function to save the image
+def save_image(image, script_dir, output_name, task_index):
+    # Create the "outputs" directory inside script_dir if it doesn't exist
+    outputs_folder = os.path.join(script_dir, 'outputs')
+    if not os.path.exists(outputs_folder):
+        os.makedirs(outputs_folder)
+    
+    # Create the folder "output{task_index}" inside the "outputs" folder
+    output_folder = os.path.join(outputs_folder, f'output{task_index}')
+    if not os.path.exists(output_folder):
+        os.makedirs(output_folder)
+    
+    # Define the output file path with the given output_name
+    output_path = os.path.join(output_folder, output_name)
+
+    # Save the image
+    cv2.imwrite(output_path, image)
+    print(f"Image saved at {output_path}")
 
 # =======================================
                                 # Part 1

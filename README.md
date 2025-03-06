@@ -21,7 +21,9 @@ It is recommended to resize images for faster calculation, as **median cut ** an
 Run `a3.py`, it provides an interactive tool for changing the hue, saturation, brightnes and lightness of the image in real time.
 
 ### Part 4
-Run `a3.py`, it provides an interactive tool for picking a point and colours all the pixels which have a smaller delta E distance than threshold with  the **label colour** 
+Run `a4.py`, it provides an interactive tool for picking a point and colours all the pixels which have a smaller delta E distance than threshold with  the **label colour** 
+
+You can save images after execution, to do so, set `save` variable to. It will save the result image in `outputs\output{assignment_number}\` with given file name using `save_image` function..
 
 ## How to run
 
